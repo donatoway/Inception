@@ -1,0 +1,8 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/donnyway/Desktop/inception2'
+docker-compose -f srcs/docker-compose.yml down
+rm -rf ~/Desktop/inception
+docker system prune -f
+docker-compose -f srcs/docker-compose.yml up --build
+make: Leaving directory `/Users/donnyway/Desktop/inception2'
+ 
